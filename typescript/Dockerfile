@@ -26,4 +26,4 @@ RUN npm i -D express @types/node @types/express
 RUN chmod 755 ./entry.sh
 EXPOSE 8000
 ENTRYPOINT ["./entry.sh"]
-CMD ["echo.handler"]
+CMD ["dist/echo/index.handler"]
